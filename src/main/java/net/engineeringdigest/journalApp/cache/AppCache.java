@@ -28,6 +28,7 @@ public class AppCache {
         List<ConfigJournalAppEntity> all = configJournalAppRepository.findAll();
         for (ConfigJournalAppEntity configJournalAppEntity : all) {
             appCache.put(configJournalAppEntity.getKey(), configJournalAppEntity.getValue());
+            
         }
     }
 
